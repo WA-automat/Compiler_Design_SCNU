@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="1">
+     <widget class="QWidget" name="browserWidget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="lineWrapColumnOrWidth">
+          <number>1</number>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'宋体'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; font-weight:600;&quot;&gt;Regex2DFA&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;是通过输入正则表达式组，将以&amp;quot;_&amp;quot;开头的变量所代表的正则表达式转换为NFA、DFA、最小化DFA的软件。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;（以&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; color:#00ff00;&quot;&gt;绿色&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;标记始态，以&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; color:#ff0000;&quot;&gt;红色&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;标记终态）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;其中，软件实现了：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;1. &lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; font-weight:600;&quot;&gt;分析&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;（左侧第一个按钮，按下该按钮后可以通过点击左侧2、3、4按钮显示不同内容）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;2. &lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; font-weight:600;&quot;&gt;正则表达式转为NFA&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;（左侧第二个按钮）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; font-weight:600;&quot;&gt;NFA转为DFA&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;（左侧第三个按钮）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;4. &lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; font-weight:600;&quot;&gt;DFA最小化&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;（左侧第四个按钮）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;5. &lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; font-weight:600;&quot;&gt;重置&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;（可以重新输入正则表达式）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;点击分析按钮，实现正则表达式-&amp;gt;NFA-&amp;gt;DFA-&amp;gt;最小化DFA&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;注：&lt;br /&gt;1. 输入只能包含一个以&amp;quot;_&amp;quot;开头的正则表达式，否则软件可能会出现误解，产生不正确的NFA、DFA等；&lt;br /&gt;2. 等号左侧的标识符仅包含字母、数字与下划线&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;3. 软件以#字符作为NFA转换的epsilon标识，因此，希望输入#字符，应当使用转义符号，输入\#才可以识别。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt; color:#aa0000;&quot;&gt;较长的正则表达式可能会分析较久，请您耐心等待，谢谢。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="titleWidget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="title">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Regex2DFA</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="buttonWidget" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="analysisPushButton">
+            <property name="text">
+             <string>分析</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nfaPushButton">
+            <property name="text">
+             <string>显示NFA</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="dfaPushButton">
+            <property name="text">
+             <string>显示DFA</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="minimumDfaPushButton">
+            <property name="text">
+             <string>最小化DFA</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="codePushButton">
+            <property name="text">
+             <string>生成匹配代码</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="resetPushButton">
+            <property name="text">
+             <string>重置程序</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QWidget" name="textWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>请在下方框中写入正则表达式</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="mainWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="labelOfTable">
+         <property name="text">
+          <string>NFA、DFA展示表</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

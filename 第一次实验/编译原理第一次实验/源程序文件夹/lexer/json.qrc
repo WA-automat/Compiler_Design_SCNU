@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/json">
+        <file>mapping.json</file>
+        <file>Xmapping.json</file>
+    </qresource>
+</RCC>
